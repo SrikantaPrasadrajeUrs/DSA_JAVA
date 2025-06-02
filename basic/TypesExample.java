@@ -2,30 +2,32 @@ import java.lang.reflect.Array;
 import java.util.Arrays;
 
 class TypesExample{
-    // public - 
+    // public
     // static - TypesExample
     // void - return type
+
     public static void main(String[] args) {
     // Example usage of the types
-    String name = "John Doe";
+    String name = "John Doe"; // String() name holds a ref of String object that string object contains name value
     int age = 30;
     double height = 5.9;
     boolean isEmployed = true;
+    // 99% oops
 
     // System className, out System class println(log)
-    //println is method , it it defined void println(String s)
+    // println is method , it it defined void println(String s)
     // System.out.println("Name: " + name);
     // System.out.println("Age: " + age);
     // System.out.println("Height: " + height);
     // System.out.println("Employed: " + isEmployed);
-    
-    // array 
+    // 
+    // array
     int[] n = {1,2,3}; // array of integers
     int[] m = new int[3]; // empty array of size 3 {0,0,0}
     // System.out.println("Array m: " + m.length);
     String[] names = new String[3]; // empty array of size 3 {null,null,null}
     // 3 default:string-null; {null,null,null}
-    // assign - storing       0        1      2
+    // assign - storing       0       1      2
     names[0] = "Subbie"; // {"Subbie",null,null}
     names[1] = "Sri"; // {"Subbie","Sri",null}
     System.out.println(Arrays.toString(names));
@@ -35,7 +37,7 @@ class TypesExample{
     //
     // aceess - reading
 }
-
+// Java basic - oops - 
 static void printArray(String[] arr){
     System.out.print("{");
     for(int i=0;i<arr.length;i++){

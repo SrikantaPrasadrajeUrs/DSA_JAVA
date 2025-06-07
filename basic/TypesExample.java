@@ -40,8 +40,8 @@ class TypesExample{
 // Java basic - oops - 
 static void printArray(String[] arr){
     System.out.print("{");
-    for(int i=0;i<arr.length;i++){
-        System.out.print(arr[i] + ", ");
+    for (String s : arr) {
+        System.out.print(s + ", ");
     }
     System.out.print("}");
 }

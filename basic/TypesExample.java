@@ -1,4 +1,5 @@
 import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
 
 class TypesExample{
@@ -28,14 +29,25 @@ class TypesExample{
     String[] names = new String[3]; // empty array of size 3 {null,null,null}
     // 3 default:string-null; {null,null,null}
     // assign - storing       0       1      2
-    names[0] = "Subbie"; // {"Subbie",null,null}
+    names[0] = "Subbie"; // {"Subbie",null,null} .length 
+    // [0] 
     names[1] = "Sri"; // {"Subbie","Sri",null}
     System.out.println(Arrays.toString(names));
     printArray(names);
     // Collection - framework
     // hahaha what food u will eat? oye for mee omg okay.
-    //
     // aceess - reading
+    int a=0;
+    Subbie subbie = new Subbie();
+    ArrayList list1 = new ArrayList();
+    list1.get(0);
+    list1.remove(0);
+    list1.add("Subbie");
+    list1.add("Sri");
+    list1.add(1);
+    list1.add(2.5);
+    list1.add(true);
+
 }
 // Java basic - oops - 
 static void printArray(String[] arr){
@@ -48,7 +60,25 @@ static void printArray(String[] arr){
 
 }
 
+class Subbie{
+    // sleep
+    // eat
+    // methods and properties
+    public void eat(String food){
+        System.out.println("Eating " + food);
+    }
+    String name;
+}
+
+// opps collections - perdined classes
+// [] - {} - 0->0->0->0 
 // Array List
 // Linked List
 // stack
 // Queue
+// HashMap
+// HashSet
+// TreeMap
+// TreeSet
+
+// 

@@ -2,9 +2,9 @@ import java.util.Arrays;
 import java.util.Iterator;
 
 class CustomArrayList<T> implements Iterable<T>{
-    T[] array;
-    int size = 0;
-    int capacity;
+    private T[] array;
+    private int size = 0;
+    private int capacity;
     private static final int DEFAULT_SIZE = 10;
 
     public int length() {

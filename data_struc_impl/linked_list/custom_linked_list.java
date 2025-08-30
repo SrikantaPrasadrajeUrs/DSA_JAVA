@@ -1,4 +1,5 @@
 
+
 class CustomLinkedList<T>{
     private Node<T> head, tail;
     private int size;
@@ -72,6 +73,16 @@ class CustomLinkedList<T>{
         return value;
     }
 
+    T get(int index){
+        Node<T> temp = head;
+        for(int i=0;i<=index;i++){
+            if(temp==null) return null;
+            if(i==index) break;
+            temp = temp.next;
+        }
+        return temp==null?null:temp.value;
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -97,6 +108,7 @@ class CustomLinkedList<T>{
         System.out.println(list);
         list.removeFirst();
         System.out.println(list);
+        System.out.println(list.get(1));
     }
 }
 
